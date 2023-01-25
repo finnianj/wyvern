@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Current status:
 
-Things you may want to cover:
+Inital database and routing complete - Navigation between homepage, blog index, application form and about page. Generation of blogpost and application models and controllers.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Basic homepage styling - SCSS enabled, google Silkscreen font imported.
