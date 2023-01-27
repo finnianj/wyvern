@@ -2,9 +2,11 @@
 
 Current status:
 
-Inital database and routing complete - Navigation between homepage, blog index, application form and about page. Generation of blogpost and application models and controllers.
+Basic backend structure almost complete.
 
-Basic homepage styling - SCSS enabled, google Silkscreen font imported.
+Latest update:
+
+Admin authentication configured. 
 
 
-TH: 4
+TH: 5
