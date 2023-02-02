@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'pages/about', to: 'pages#about', as: 'about'
 
-  resources :applications
+  resources :candidates
   resources :blogposts
 
 
