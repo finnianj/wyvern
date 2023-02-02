@@ -15,6 +15,8 @@
  */
 @import "config/fonts";
 @import "pages/home";
+@import "pages/navbar";
+@import "pages/blogindex";
 
 body {
   font-family: 'Silkscreen', cursive;
@@ -22,4 +24,6 @@ body {
   background-image: url(https://wyv.art/css/images/5-2.png);
   background-blend-mode: overlay;
   background-size: 10%;
+  width: 100%;
+  margin: 0;
 }
