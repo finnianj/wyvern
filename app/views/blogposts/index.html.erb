@@ -1,9 +1,11 @@
+<div id="blog-container">
 <h1>All my blogposts</h1>
 
-<% @blogposts.each do |blogpost| %>
-<h2><%= blogpost.title %></h2>
-<p><%= blogpost.content %></p>
-<% end %>
+  <% @blogposts.each do |blogpost| %>
+  <h2><%= blogpost.title %></h2>
+  <p><%= blogpost.content %></p>
+  <% end %>
 
-<%= link_to "Home", root_path %>
-<%= link_to "Create new post", new_blogpost_path %>
+  <%= link_to "Home", root_path %>
+  <%= link_to "Create new post", new_blogpost_path %>
+</div>
