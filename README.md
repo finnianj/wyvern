@@ -2,11 +2,11 @@
 
 Current status:
 
-Basic backend structure almost complete.
+Working on admin functions: writing new blog posts, displaying all applications in dashboard, editing about page etc.
 
 Latest update:
 
-Admin authentication configured. 
+Application form configured. Candidate model/controller created as well as new/create paths. You can now create a new application and it will validate only if your email is unique and if certain parameters are filled.
 
 
-TH: 5
+TH: 6
