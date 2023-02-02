@@ -1,0 +1,8 @@
+<div class="container">
+  <%= simple_form_for [@blogpost] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content, as: :text %>
+    <%= f.submit class: "btn btn-primary" %>
+    <%= link_to "Cancel", root_path, class:"btn btn-secondary", id: "dashboard-button"%>
+  <% end %>
+</div>

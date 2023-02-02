@@ -1,3 +1,9 @@
 <h1>All my blogposts</h1>
-<%= link_to "Home", root_path %>
 
+<% @blogposts.each do |blogpost| %>
+<h2><%= blogpost.title %></h2>
+<p><%= blogpost.content %></p>
+<% end %>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Create new post", new_blogpost_path %>
