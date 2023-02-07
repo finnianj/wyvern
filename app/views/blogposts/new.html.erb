@@ -1,8 +1,18 @@
-<div class="container">
-  <%= simple_form_for [@blogpost] do |f| %>
-    <%= f.input :title %>
-    <%= f.input :content, as: :text %>
-    <%= f.submit class: "btn btn-primary" %>
-    <%= link_to "Cancel", root_path, class:"btn btn-secondary", id: "dashboard-button"%>
-  <% end %>
+<div id="alt_background">
+  <div id="new_blogpost_container">
+    <%= simple_form_for [@blogpost] do |f| %>
+      <div class="blogpost_input">
+        <%= f.input :title %>
+      </div>
+      <div class="blogpost_input">
+        <%= f.rich_text_area :content %>
+      </div>
+      <div class="blogpost_input">
+        <%= f.submit class: "btn btn-primary" %>
+      </div>
+      <div class="blogpost_input">
+        <%= link_to "Cancel", root_path, class:"btn btn-secondary", id: "dashboard-button"%>
+      </div>
+    <% end %>
+  </div>
 </div>

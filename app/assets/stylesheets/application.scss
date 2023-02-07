@@ -13,12 +13,14 @@
  *= require_tree .
  *= require_self
  */
+@import "pages/actiontext";
 @import "config/fonts";
 @import "pages/home";
 @import "pages/navbar";
 @import "pages/blogindex";
+@import "pages/newblogpost";
 
-body {
+body{
   font-family: 'Silkscreen', cursive;
   background-color: rgba(210, 186, 195, 0.892);
   background-image: url(https://wyv.art/css/images/5-2.png);
