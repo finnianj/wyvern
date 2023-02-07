@@ -8,6 +8,9 @@
         <%= f.rich_text_area :content %>
       </div>
       <div class="blogpost_input">
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+      </div>
+      <div class="blogpost_input">
         <%= f.submit class: "btn btn-primary" %>
       </div>
       <div class="blogpost_input">

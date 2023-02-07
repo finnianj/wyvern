@@ -2,8 +2,11 @@
 <h1>All my blogposts</h1>
 
   <% @blogposts.each do |blogpost| %>
-  <h2><%= blogpost.title %></h2>
-  <p><%= blogpost.content %></p>
+    <h2><%= blogpost.title %></h2>
+    <% blogpost.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+    <p><%= blogpost.content %></p>
   <% end %>
 
   <%= link_to "Home", root_path %>

@@ -21,7 +21,7 @@ class BlogpostsController < ApplicationController
   private
 
   def blogpost_params
-    params.require(:blogpost).permit(:title, :author, :content)
+    params.require(:blogpost).permit(:title, :author, :content, photos: [])
   end
 
 end
