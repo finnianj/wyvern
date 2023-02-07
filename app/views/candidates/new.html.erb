@@ -1,7 +1,7 @@
-<h1>new application</h1>
-<%= link_to "Home", root_path %>
-
 <div class="container">
+  <h1>new application</h1>
+  <%= link_to "Home", root_path %>
+
   <%= simple_form_for [@candidate] do |f| %>
     <%= f.input :first_name %>
     <%= f.input :last_name %>
@@ -23,5 +23,5 @@
       <%= f.submit class: "btn btn-primary", id: "edit-button" %>
       <%= link_to "Home", root_path, class:"btn btn-secondary", id: "dashboard-button"%>
     </div>
-    <% end %>
+  <% end %>
 </div>
