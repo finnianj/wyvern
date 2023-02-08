@@ -9,7 +9,7 @@ body {
 }
 
 .central_container{
-  width: 50%;
+  width: 80%;
   height: 40vh;
   margin: 20vh auto;
   display: flex;
@@ -20,10 +20,16 @@ body {
 
 .homepage-item{
   margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.homepage-item:hover{
+  color: rgba(59, 48, 220, 0.661)
 }
 
 #homepage-title{
-  font-size: 70px;
+  font-size: 10vh;
   color: rgba(59, 48, 220, 0.661);
 }
 

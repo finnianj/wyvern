@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
 @import "pages/actiontext";
 @import "config/fonts";
 @import "pages/home";
@@ -29,3 +30,5 @@ body{
   width: 100%;
   margin: 0;
 }
+
+$form-group: padding 20px;
