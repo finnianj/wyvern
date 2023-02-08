@@ -14,8 +14,8 @@ body {
   margin: 20vh auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .homepage-item{
@@ -33,8 +33,46 @@ body {
   color: rgba(59, 48, 220, 0.661);
 }
 
+#title-container{
+  height: 30vh;
+  width: 100%;
+}
+
 
 #homepage-welcome{
   font-family:'Cairo', sans-serif;
   font-size: 50px;
+}
+
+#homepage-links{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh;
+  position: fixed;
+  top: 50vh;
+}
+
+#homepage-links h3{
+  margin: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #homepage-title{
+    font-size: 8vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  #homepage-title{
+    font-size: 6vh;
+  }
+}
+@media only screen and (max-width: 650px) {
+
+  #homepage-title{
+    font-size: 6vh;
+  }
 }

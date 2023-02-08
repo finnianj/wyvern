@@ -1,9 +1,12 @@
 <div class="central_container">
+  <div id="title-container">
+    <h1 id="homepage-title"></h1>
+  </div>
+  <div id="homepage-links">
+    <h3 ><%= link_to "About", about_path, class: "homepage-item" %></h3>
+    <h3 ><%= link_to "Blog", blogposts_path, class: "homepage-item" %></h3>
+    <h3 ><%= link_to "Application Form", new_candidate_path, class: "homepage-item" %></h3>
+    <h3 ><%= link_to "Admin dashboard", candidates_path, class: "homepage-item" %></h3>
+  </div>
 
-  <h1 id="homepage-title">Wyvern Art Fund</h1>
-
-  <h3 ><%= link_to "About", about_path, class: "homepage-item" %></h3>
-  <h3 ><%= link_to "Blog", blogposts_path, class: "homepage-item" %></h3>
-  <h3 ><%= link_to "Application Form", new_candidate_path, class: "homepage-item" %></h3>
-  <h3 ><%= link_to "Admin dashboard", candidates_path, class: "homepage-item" %></h3>
 </div>
