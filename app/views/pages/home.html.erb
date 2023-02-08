@@ -1,4 +1,4 @@
-<div class="central_container">
+<div class="central_container" onload="myScript">
   <div id="title-container">
     <h1 id="homepage-title"></h1>
   </div>
@@ -10,3 +10,15 @@
   </div>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+ var homepage_title = new Typed('#homepage-title', {
+  strings: ["Wyvern Art Fund ^1000", "Supporting creativity^1000"],
+  typeSpeed: 50,
+  showCursor: false,
+  loop: true,
+  fadeOut: true
+});
+
+</script>
