@@ -3,6 +3,7 @@
   height: 100%;
   background-color: white;
   overflow: auto;
+  position:fixed;
 }
 
 #new_blogpost_container{
@@ -13,5 +14,5 @@
 }
 
 .blogpost_input{
-  padding: 2vh;
+  margin:20px;
 }

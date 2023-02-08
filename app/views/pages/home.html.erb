@@ -1,9 +1,24 @@
-<div class="central_container">
+<div class="central_container" onload="myScript">
+  <div id="title-container">
+    <h1 id="homepage-title"></h1>
+  </div>
+  <div id="homepage-links">
+    <h3 ><%= link_to "About", about_path, class: "homepage-item" %></h3>
+    <h3 ><%= link_to "Blog", blogposts_path, class: "homepage-item" %></h3>
+    <h3 ><%= link_to "Application Form", new_candidate_path, class: "homepage-item" %></h3>
+    <h3 ><%= link_to "Admin dashboard", candidates_path, class: "homepage-item" %></h3>
+  </div>
 
-  <h1 id="homepage-title">Wyvern Art Fund</h1>
-
-  <h3 class="homepage-item"><%= link_to "About", about_path %></h3>
-  <h3 class="homepage-item"><%= link_to "Blog", blogposts_path %></h3>
-  <h3 class="homepage-item"><%= link_to "Application Form", new_candidate_path %></h3>
-  <h3 class="homepage-item"><%= link_to "Admin dashboard", candidates_path %></h3>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+ var homepage_title = new Typed('#homepage-title', {
+  strings: ["Wyvern Art Fund ^1000", "Supporting creativity^1000"],
+  typeSpeed: 50,
+  showCursor: false,
+  loop: true,
+  fadeOut: true
+});
+
+</script>

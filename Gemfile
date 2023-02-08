@@ -32,11 +32,14 @@ gem "jbuilder"
 
 gem "devise"
 
+gem 'bootstrap', '~> 5.1.3'
+
 gem 'simple_form'
 
 gem "dotenv-rails", groups: [:development, :test]
 
 gem "cloudinary"
+
 
 
 

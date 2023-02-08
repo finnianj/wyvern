@@ -9,26 +9,71 @@ body {
 }
 
 .central_container{
-  width: 50%;
+  width: 80%;
   height: 40vh;
   margin: 20vh auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .homepage-item{
   margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.homepage-item:hover{
+  color: rgba(59, 48, 220, 0.661)
 }
 
 #homepage-title{
-  font-size: 70px;
+  font-size: 10vh;
   color: rgba(59, 48, 220, 0.661);
+  text-align: center;
+}
+
+#title-container{
+  height: 30vh;
+  width: 100%;
 }
 
 
 #homepage-welcome{
   font-family:'Cairo', sans-serif;
   font-size: 50px;
+}
+
+#homepage-links{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh;
+  position: fixed;
+  top: 50vh;
+}
+
+#homepage-links h3{
+  margin: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #homepage-title{
+    font-size: 8vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #homepage-title{
+    font-size: 6vh;
+  }
+}
+@media only screen and (max-width: 650px) {
+
+  #homepage-title{
+    font-size: 6vh;
+  }
 }
