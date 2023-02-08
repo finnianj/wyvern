@@ -10,8 +10,8 @@ A lot of stuff that I haven't thought of right now.
 
 Latest update:
 
-Posts now have rich text and photos.
+JS animations, front end styling, simple form
 
 
 
-8.5
+12
