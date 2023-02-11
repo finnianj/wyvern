@@ -1,14 +1,28 @@
 <div id="blog-container">
-<h1>All my blogposts</h1>
-
+<% if @blogposts.empty? %>
+  <h1> Watch this space for our latest blog posts! </h1>
+<% else %>
   <% @blogposts.each do |blogpost| %>
-    <h2><%= blogpost.title %></h2>
-    <% blogpost.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
-    <p><%= blogpost.content %></p>
+    <div class="post_item">
+      <div class="post_title">
+        <h1><%= blogpost.title %></h1>
+      </div>
+      <div class="post_photos">
+        <% blogpost.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+        <% end %>
+      </div>
+      <div class="post_content">
+        <p><%= blogpost.content %></p>
+      </div>
+    </div>
   <% end %>
+<% end %>
 
-  <%= link_to "Home", root_path %>
-  <%= link_to "Create new post", new_blogpost_path %>
+  <div class="buttons">
+    <%= link_to "Home", root_path, class: "btn btn-light"%>
+    <% if user_signed_in? %>
+    <%= link_to "Create new post", new_blogpost_path, class: "btn btn-success" %>
+    <% end %>
+  </div>
 </div>

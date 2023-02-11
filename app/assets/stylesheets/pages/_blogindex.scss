@@ -2,8 +2,36 @@
 
 
 #blog-container{
-  width: 50%;
-  height: 40vh;
+  width: 80%;
   margin: 10vh auto;
+  text-align: center;
+}
 
+.post_item{
+  border: 2px solid black;
+  margin: 10%;
+  padding: 10%;
+  background: rgba(255, 255, 255, 0.671);
+  border: 1px solid gold;
+  border-radius: 3px;
+}
+
+.post_title{
+  font-size: 50px;
+}
+
+// .post_photos{
+
+// }
+
+.post_content{
+  text-align: left;
+}
+
+.buttons{
+  margin-bottom: 10%;
+}
+
+.buttons > *{
+  font-size: 2vh;
 }
