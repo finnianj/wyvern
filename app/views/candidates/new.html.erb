@@ -15,14 +15,18 @@
     <%= f.input :residency %>
     <%= f.input :address %>
     <%= f.input :project_type %>
-    <%= f.input :project_description %>
+    <div id="description">Project description
+      <%= f.text_area :project_description %>
+    </div>
     <%= f.input :project_budget %>
-    <%= f.input :project_hours %>
+    <%= f.input :project_hours, label: "Estimated number of hours for project" %>
     <%= f.input :portfolio, label: "Portfolio (link)" %>
     <%= f.input :website, label: "Website (link)" %>
-    <%= f.input :extras, label: "Anything to add?" %>
+    <div id="comments">Anything to add?
+      <%= f.text_area :extras %>
+    </div>
   </div>
-    <div class="bottom-buttons" style="display:flex;justify-content:space-around">
+    <div id="bottom-buttons" style="display:flex;justify-content:space-around">
       <%= f.submit "Submit", class: "btn btn-primary", id: "edit-button" %>
       <%= link_to "Home", root_path, class:"btn btn-secondary", id: "dashboard-button"%>
     </div>
