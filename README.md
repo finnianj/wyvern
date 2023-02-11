@@ -3,9 +3,13 @@
 TODO:
 
 Configure styling in all display pages.
-Configure cloudinary image upload.
 Make mobile responsive.
-A lot of stuff that I haven't thought of right now.
+
+Fix Cloudinary image upload? 
+Fix Text animation after homepage navigation/ new typed crashing navigation.
+Create success popups after application/post creation.
+Fix image resizing in blog display
+
 
 
 Latest update:
