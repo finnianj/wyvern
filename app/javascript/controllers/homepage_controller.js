@@ -12,6 +12,10 @@ export default class extends Controller {
         loop: true,
         fadeOut: true
       });
+    if (document.getElementById('exampleModal')) {
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {keyboard: false, backdrop: 'static'});
+      myModal.show();
+    }
   }
 
 
