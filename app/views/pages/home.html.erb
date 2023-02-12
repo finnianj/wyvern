@@ -12,30 +12,20 @@
     <h3 ><%= link_to "Admin dashboard", candidates_path, class: "homepage-item" %></h3>
   </div>
 
-  <div class="flash flash-success alert alert-dismissible fade show" role="alert">
-  <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
-  <a data-bs-dismiss="alert" aria-label="Close">
-    <i class="fas fa-times"></i>
-  </a>
-</div>
+  
 
 </div>
-
-<%# <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
- var homepage_title = new Typed('#homepage-title', {
-  strings: ["Wyvern Art Fund ^1000", "Supporting creativity^1000"],
-  typeSpeed: 80,
-  showCursor: false,
-  loop: true,
-  fadeOut: true
-});
-
-</script> %>
 
 <script>
   var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {keyboard: false, backdrop: 'static'});
     console.log("modal is true")
     myModal.show();
 
+  var homepage_title = new Typed('#homepage-title', {
+    strings: ["Wyvern Art Fund ^1000", "Supporting creativity^1000"],
+    typeSpeed: 80,
+    showCursor: false,
+    loop: true,
+    fadeOut: true
+  });
 </script>

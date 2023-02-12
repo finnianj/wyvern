@@ -7,6 +7,7 @@ class CandidatesController < ApplicationController
   end
 
   def index
+    @candidates = Candidate.all
   end
 
   def create
