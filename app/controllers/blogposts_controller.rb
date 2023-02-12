@@ -18,7 +18,19 @@ class BlogpostsController < ApplicationController
     end
   end
 
+  def destroy
+    # TODO: MAKE ADMIN ONLY
+    set_blogpost
+    @blogpost.destroy
+    redirect_to blogposts_path, notice: "Post was sucessfully obliterated"
+  end
+
+
   private
+
+  def set_blogpost
+    @blogpost = Blogpost.find(params[:id])
+  end
 
   def blogpost_params
     params.require(:blogpost).permit(:title, :author, :content, photos: [])
