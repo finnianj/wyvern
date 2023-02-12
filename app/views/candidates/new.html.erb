@@ -1,12 +1,12 @@
 <div class="application_container">
 
-  <h1>New Application</h1>
+  <h1 class="header">New Application</h1>
 
   <%= simple_form_for [@candidate] do |f| %>
   <div class="application_item">
     <div id="star_info"><em>Items marked with a '*' are required</em></div>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
+    <%= f.input :first_name, label: "First Name" %>
+    <%= f.input :last_name, label: "Last Name"%>
     <%= f.input :age %>
     <%= f.input :gender %>
     <%= f.input :email %>
@@ -14,11 +14,11 @@
     <%= f.input :nationality %>
     <%= f.input :residency %>
     <%= f.input :address %>
-    <%= f.input :project_type %>
-    <div id="description">Project description ..*
-      <%= f.text_area :project_description %>
+    <%= f.input :project_type, label: "Project Type "%>
+    <div id="description">Project Description ..*
+      <%= f.text_area :project_description, label: "Project Description" %>
     </div>
-    <%= f.input :project_budget %>
+    <%= f.input :project_budget, label: "Project Budget"%>
     <%= f.input :project_hours, label: "Estimated number of hours for project" %>
     <%= f.input :portfolio, label: "Portfolio (link)" %>
     <%= f.input :website, label: "Website (link)" %>

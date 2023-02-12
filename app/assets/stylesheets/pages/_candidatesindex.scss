@@ -17,3 +17,11 @@
 .info{
   flex-grow: 3;
 }
+
+#candidate-buttons{
+  display: flex;
+  justify-content: end;
+}
+#candidate-buttons > *{
+  margin: 5px;
+}
