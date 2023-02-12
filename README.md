@@ -13,8 +13,8 @@ Fix image resizing in blog display
 
 Latest update:
 
-JS animations, front end styling, simple form, modal popup.
+JS animations, delete methods, modal popup, admin dashboard
 
 
 
-14
+16
