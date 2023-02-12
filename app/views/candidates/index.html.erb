@@ -1,8 +1,8 @@
 <div id="candidates-container">
   <% if @candidates.empty? %>
-  <h1>Currently no applications </h1>
+  <h1 class="header">Currently no applications </h1>
   <% else %>
-    <h1>Applications (newest to oldest) </h1>
+    <h1 class="header">Applications (newest to oldest) </h1>
     <br>
     <div class="accordion" id="accordionExample">
       <% @candidates.reverse.each do |candidate| %>
@@ -64,6 +64,6 @@
     </div>
   <% end %>
   <br>
-  <%= link_to "Home", root_path, class: "btn btn-light"%>
+  <%= link_to "Home", root_path, class: "btn btn-primary"%>
 
 </div>
