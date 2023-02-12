@@ -1,3 +1,6 @@
+<% if @modal == true %>
+<%= render "shared/modal" %>
+<% end %>
 <div class="central_container" onload="myScript">
   <div id="title-container">
     <h1 id="homepage-title"></h1>
@@ -9,16 +12,20 @@
     <h3 ><%= link_to "Admin dashboard", candidates_path, class: "homepage-item" %></h3>
   </div>
 
+  
+
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
- var homepage_title = new Typed('#homepage-title', {
-  strings: ["Wyvern Art Fund ^1000", "Supporting creativity^1000"],
-  typeSpeed: 80,
-  showCursor: false,
-  loop: true,
-  fadeOut: true
-});
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {keyboard: false, backdrop: 'static'});
+    console.log("modal is true")
+    myModal.show();
 
+  var homepage_title = new Typed('#homepage-title', {
+    strings: ["Wyvern Art Fund ^1000", "Supporting creativity^1000"],
+    typeSpeed: 80,
+    showCursor: false,
+    loop: true,
+    fadeOut: true
+  });
 </script>

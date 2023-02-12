@@ -40,6 +40,8 @@ gem "dotenv-rails", groups: [:development, :test]
 
 gem "cloudinary"
 
+gem "font-awesome-sass", "~> 6.3.0"
+
 
 
 
