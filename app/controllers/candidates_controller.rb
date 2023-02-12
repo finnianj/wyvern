@@ -19,7 +19,18 @@ class CandidatesController < ApplicationController
     end
   end
 
+  def destroy
+    # TODO: MAKE ADMIN ONLY
+    set_candidate
+    @candidate.destroy
+    redirect_to candidates_path, notice: "Application was sucessfully obliterated"
+  end
+
   private
+
+  def set_candidate
+    @candidate = Candidate.find(params[:id])
+  end
 
   def candidate_params
     params.require(:candidate).permit(:first_name, :last_name, :age, :gender, :email,

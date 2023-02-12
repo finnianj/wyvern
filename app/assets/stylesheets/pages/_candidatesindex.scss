@@ -3,3 +3,17 @@
   margin: 10vh auto;
   text-align: center;
 }
+
+.candidate-info{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.info-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info{
+  flex-grow: 3;
+}
