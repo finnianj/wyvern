@@ -12,7 +12,7 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(candidate_params)
     if @candidate.save
-      redirect_to root_path, notice: "Application was successfully created"
+      redirect_to root_path(modal: true)
     else
       render :new, status: :unprocessable_entity
     end

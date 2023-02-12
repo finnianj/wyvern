@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
 
   def home
+    @modal = true if params[:modal] == 'true'
   end
 
   def about
