@@ -1,4 +1,18 @@
 #about_container{
-  width: 50vh;
+  width: 80%;
   margin: 5vh auto;
+  text-align: center;
+}
+
+#about_info{
+  font-size: 300%;
+  font-family: 'Space Mono', monospace;
+  background-color: rgba(255, 255, 255, 0.58);
+  padding: 10%;
+  border-radius: 5px;
+  margin: 5%;
+}
+
+#about-lower-buttons > * {
+  font-size: 2vh;
 }
