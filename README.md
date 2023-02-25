@@ -11,6 +11,7 @@ Fix image resizing in blog display
 
 config.mailer_sender = '"Example.com" <your@site.com>' 
 # config/initializers/devise.rb
+https://stackoverflow.com/questions/68939079/how-to-send-welcome-email-after-user-registers-using-devise 
 
 
 
